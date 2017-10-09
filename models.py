@@ -16,7 +16,17 @@ class AccessControlEntry(EmbeddedDocument):
     }
 
 
-class Policy(EmbeddedDocument):
+class AuditPolicy(EmbeddedDocument):
+    enableAuditing = BooleanField(required=True, default=True)
+    ReadObject = BooleanField(required=True, default=False)
+    ReadPassword = BooleanField(required=True, default=True)
+    ChangePassword = BooleanField(required=True, default=True)
+    ChangePasswordPolicy = BooleanField(required=True, default=True)
+    ChangeObjectProperties = BooleanField(required=True, default=True)
+    ChangeObjectACL = BooleanField(required=True, default=True)
+
+
+class PasswordPolicy(EmbeddedDocument):
 
     passwordMinimumLength = IntField(required=True, default=15)
     passwordRequireSpecialChar = BooleanField(required=True, default=True)
