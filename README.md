@@ -1,3 +1,5 @@
+Work in progess! Some functionality is not existent yet.
+
 # PrivID
 Privileged Access Management in Python.
 
