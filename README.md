@@ -1,4 +1,4 @@
-Work in progess! Some functionality is not existent yet.
+Work in progess! Some functionality doesn't exist yet (sorry).
 
 # PrivID
 Privileged Access Management in Python.
