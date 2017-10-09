@@ -1,12 +1,13 @@
 import falcon
+import config
 from Resources import EnvironmentResource, ApplicationResource, GroupResource, AccountResource
 from mongoengine import *
 
 app = falcon.API()
 
 connect(
-    db='privacc',
-    host='mongodb://localhost/privacc'
+    db=config.database_name,
+    host=config.database_uri
 )
 
 environment = EnvironmentResource()
