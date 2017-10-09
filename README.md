@@ -3,7 +3,7 @@ Work in progess! Some functionality doesn't exist yet (sorry).
 # PrivID
 Privileged Access Management in Python.
 
-PrivID is currently a password storage system written in Python. Clients interact through a set of REST APIs. Data is stored in MongoDB. An AngularJS based GUI is in the works.
+PrivID is a privileged access management system written in Python. Clients interact through a set of REST APIs. Data is stored in MongoDB. An AngularJS based GUI is in the works.
 
 Management of passwords/just-in-time access can be enabled through "clients" that call this REST API to make the necessary changes in downstream systems.
 
