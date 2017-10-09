@@ -13,7 +13,7 @@ PrivID utilizes "clients" to connect to downstream systems for password manageme
 
 # Administrative Units
 
-PrivID divides things into categories called "administrative units", that hopefully maps to the environment that it's integrating with.
+PrivID divides things into categories called "administrative units", that ideally map to the environment that it's integrating with.
 
 Environments -> Applications -> Groups -> Accounts
   
@@ -23,7 +23,7 @@ Environments -> Applications -> Groups -> Accounts
  
  ### Environments
  
- Environments are the highest level administrative unit in PrivID. An example config would be to create 3 environments, defined Dev/QA/Prod. Audit requirements are likely to differ between these, and environments provide an easy way to alter these without making many changes on lower level objects.
+ Environments are the highest level administrative unit in PrivID. An example config would be to create 3 environments, defined Dev/QA/Prod. Audit requirements are likely to differ between these, and environments provide an easy way to alter these without making changes on potentially numerous lower level objects.
  
  ### Applications
  
@@ -31,7 +31,7 @@ Environments -> Applications -> Groups -> Accounts
  
  ### Groups
  
- Groups in PrivID generally map to the human teams your organization is divided into. For example, this makes it easy to grant access to Active Directories built-in "Administrator" account to anyone on your Active Directory team. A client may also store which downstream groups a set of account should be a member of in a given system. (Eg. Domain Admins, Enterprise Admins, etc.)
+ Groups in PrivID generally map to the human teams your organization is divided into. For example, granting access to Active Directories built-in "Administrator" account to anyone on your Active Directory team. A client may also lookup which downstream groups a set of accounts should be a member of in a given system. (Eg. Domain Admins, Enterprise Admins, etc.)
  
  ### Accounts
  
